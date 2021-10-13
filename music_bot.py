@@ -20,7 +20,7 @@ async def play(ctx, url: str):
     except PermissionError:
         await ctx.send("Wait for music to end or use .stop to halt me manually.")
 
-    voice_channel = discord.utils.get(ctx.guild.voice_channels, name="General")
+    voice_channel = ctx.author.voice.channel
     try:
         await voice_channel.connect()
     except:
