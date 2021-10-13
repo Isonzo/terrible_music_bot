@@ -85,9 +85,9 @@ async def stop(ctx):
 
 @client.command()
 async def helpme(ctx):
-    ctx.send("Hi, I'm a terrible music bot that uses youtube-dl.")
-    ctx.send("The commands you can use are .helpme, .resume, .pause, .leave, .stop, and .repeat")
-    ctx.send("Please improve my source code if you can :c")
+    await ctx.send("Hi, I'm a terrible music bot that uses youtube-dl.")
+    await ctx.send("The commands you can use are .helpme, .resume, .pause, .leave, .stop, and .repeat")
+    await ctx.send("Please improve my source code if you can :c")
     pass
     
 
